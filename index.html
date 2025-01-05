@@ -2,67 +2,63 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>end of year reflections</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>end of year reflections</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
-  <!-- Audio Player / Header -->
-  <header>
-    <h1>end of year reflections</h1>
-    <div id="audio-player">
-        <audio id="myAudio">
-          <source src="assets/audio/track1.mp3" type="audio/mpeg">
-          your browser does not support the audio element.
-        </audio>
-        <div id="controls">
-          <button id="btnPrev">«</button>
-          <button id="btnPlay">Play</button>
-          <button id="btnPause">Pause</button>
-          <button id="btnNext">»</button>
+    <!-- Header -->
+    <header>
+        <h1>end of year reflections</h1>
+        <div id="audio-player">
+            <audio id="myAudio">
+                <source src="assets/audio/01 - Opening.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div id="controls">
+                <button id="btnPrev">«</button>
+                <button id="btnPlay">Play</button>
+                <button id="btnPause">Pause</button>
+                <button id="btnNext">»</button>
+            </div>
+            <p id="trackInfo"></p>
+            <div id="progress">
+                <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+            </div>
         </div>
-        <p id="trackInfo"></p>
-        <div id="progress">
-          <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
-        </div>
-      </div>
-  </header>
-  
-  <!-- Main Content Wrapper -->
-  <main>
-    <!-- Section 1: Gratitude & Achievements -->
-    <section id="gratitude">
-      <h2>1. Gratitude and Achievements</h2>
-      <p> ... your text goes here ... </p>
-      <ul>
-        <li>Finished my MS in Optical Sciences</li>
-        <li>Published a scientific paper</li>
-        <!-- etc. -->
-      </ul>
-    </section>
+    </header>
 
-    <!-- A photo or sketch in between sections -->
-    <img src="assets/images/sketch1.jpg" alt="Sketch or photo" class="art-piece" />
+    <!-- Main Content -->
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>[Your introduction text will go here]</p>
+        </section>
 
-    <!-- Section 2: Challenges ... -->
-    <section id="challenges">
-      <h2>2. Challenges and Hard Times</h2>
-      <p> ... text here ... </p>
-    </section>
+        <img src="assets/images/ann-annie-the-wind.jpg" alt="Album Art - The Wind" class="art-piece" />
 
-    <!-- Another photo or sketch -->
-    <img src="assets/images/photo2.jpg" alt="Photography piece" class="art-piece" />
+        <section id="gratitude">
+            <h2>Gratitude and Achievements</h2>
+            <p>[Your gratitude text will go here]</p>
+        </section>
 
-    <!-- ... more sections and images ... -->
+        <img src="assets/images/hand-one-plums.png" alt="Hand drawn plums" class="art-piece" />
 
-  </main>
+        <section id="challenges">
+            <h2>Challenges</h2>
+            <p>[Your challenges text will go here]</p>
+        </section>
 
-  <!-- Optional Footer -->
-  <footer>
-    <p>col cavanaugh</p>
-  </footer>
+        <img src="assets/images/kitty-smoosh.png" alt="Kitty illustration" class="art-piece" />
+    </main>
 
-  <script src="assets/js/script.js"></script>
+    <footer>
+        <p>col cavanaugh</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
