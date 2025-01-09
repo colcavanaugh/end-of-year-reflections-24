@@ -2,7 +2,7 @@
 
 hello! this is a simple webpage i made to document my reflections at the end of 2024.
 
-click (here)[https://colcavanaugh.github.io/end-of-year-reflections-24/] to hop to the page <3
+click [here](https://colcavanaugh.github.io/end-of-year-reflections-24/) to hop to the page <3
 
 ### 🛠 technical bits
 
