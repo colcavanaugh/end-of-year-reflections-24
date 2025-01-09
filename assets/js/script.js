@@ -132,7 +132,7 @@ const ContentManager = {
                 ♡ fixed up an old camera from the 1920s and took some cute pictures with it<br>
                 ♡ showed a magnifying glass i made at the baltimore jewelry studio<br><br>
                 and probably even more that i'm forgetting! no wonder i have felt so busy this year hehe.<br><br>
-                i really am proud of so much of this beautiful and fun work i've  and so grateful for <br>&nbsp;&nbsp;&nbsp;done, the opportunity to grow in these ways at this time in my life.
+                i really am proud of and grateful so much of this beautiful, fun work i've <br>&nbsp;&nbsp;&nbsp;done, the opportunity to grow in these ways at this time in my life.
             `
         },
         {
@@ -145,7 +145,7 @@ const ContentManager = {
             title: '[december 27th, 2024]<br>at the same time, this has been a really sad, difficult, and anxiety-ridden year',
 			content: `
 			♡ i've been adjusting to post-grad life, and enduring the culture shock of starting at a tech startup<br>
-			♡ i've been navigating move in with trevor, my love<br>
+			♡ i've been navigating moving in with trevor, my love<br>
 			♡ nana passed away in the fall<br>
 			♡ the election was won by trump<br>
 			♡ genocide continues in gaza, and around the world<br><br>
@@ -160,7 +160,7 @@ const ContentManager = {
         },
         {
             type: 'text',
-            title: '[december 27th, 2024]<br>i want to hold space now to acknowledge all things, big or small,<br>that i left behind and want to reclaim',
+            title: '[december 27th, 2024]<br>i want to hold space now to acknowledge all things, big and small,<br>that i left behind and want to reclaim',
 			content: `
 			♡ regularly cooking well for myself<br><br>
 			♡ routine health and care:<br>
@@ -174,7 +174,7 @@ const ContentManager = {
 			♡ an active lifestyle:<br>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♡ rock climbing<br>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♡ hiking<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♡ regular yoga and gym<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♡ regular yoga and gym<br><br>
 			♡ building community and relationships in tucson ♡<br><br>
 			♡ political engagement and thoughtfulness<br><br>
 			♡ simple joy, trust, and gratitude<br>
@@ -197,7 +197,7 @@ const ContentManager = {
 			♡ codependency and projection<br><br>
 			♡ stuckness and passivity<br><br>
 			♡ lack of gratitude<br><br>
-			what a delightful crew!
+			what a delightful crew! okay, that's enough list-writing for one day. until next time ♡
 			` 
 		},
         {
@@ -210,11 +210,12 @@ const ContentManager = {
             title: '[december 30th, 2024]',
 			content: `
 			just a few more days until i return back to work.<br><br>
-			today, i have been a touch lost in my reactivity — again.<br> it was similar yesterday... i had such a brief little window of clarity and groundedness<br> when I got back to tucson, but, poof! there it goes!<br><br>
-			i’m feeling a few urges in response to this resurgence of anxiety and reactivity:<br><br>
-			1. to map my mental landscape, as a tool for mindfulness and for reclaiming my agency when i’m looping.<br>
-			2. to finish off my end-of-year journaling with writings on who i want to be/become this year.<br>
-			there are a few other urges too, but i recognize them as traps and let them go ~<br><br>
+			today, i have been a touch lost in my reactivity — again. it was similar yesterday...<br> 
+            i had such a brief little window of clarity and groundedness when I got back to tucson, but, poof! there it goes.<br><br>
+			i am feeling a few urges in response to this resurgence of anxiety and reactivity:<br><br>
+			1. to map my mental landscape, as a tool for mindfulness and for reclaiming my agency when i’m looping<br><br>
+			2. to finish off my end-of-year journaling with writings on who i want to be/become this year<br>
+			&nbsp;&nbsp;&nbsp;there are a few other urges too, but i recognize them as traps and let them go ~<br><br>
 			i suppose we can start with a map! 
 			` 
 		},
