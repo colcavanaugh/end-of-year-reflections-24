@@ -1,120 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>end of year reflections</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>end of year reflections</title>
+
+  <!-- Minimal anti-FOUC inline style -->
+  <style>
+    /*
+      1) Initially hide all page content (except scrollbars).
+      2) We'll remove this hidden state via JS once:
+         - local Lora font is loaded
+         - splash background image is loaded
+    */
+    body:not(.page-ready) {
+      visibility: hidden;
+    }
+  </style>
+
+  <!-- Main site styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+  <!-- Splash Screen Overlay -->
+  <div id="splash-screen">
+    <h1 id="splash-title">welcome to the digital home for my end of year reflections &lt;3</h1>
+    <button id="enterBtn" style="display: none;">enter</button>
+  </div>
+
+  <div id="main-site">
+    <!-- Fixed Header -->
     <header>
         <h1>end of year reflections</h1>
     </header>
 
-    <div class="content-wrapper">
-        <!-- Image Section -->
-        <div class="image-section">
-            <div class="image-container">
-                <img src="assets/images/bob's-burgers.png" alt="Bob's Burgers" class="artwork" data-index="0">
-                <img src="assets/images/hand-one-plums.png" alt="Plums illustration" class="artwork" data-index="1">
-                <img src="assets/images/hand-two-hands.png" alt="Hands illustration" class="artwork" data-index="2">
-                <img src="assets/images/kitty-smoosh.png" alt="Kitty illustration" class="artwork" data-index="3">
-                <img src="assets/images/kyte-of-berkley-ft.png" alt="Kyte of Berkley" class="artwork" data-index="4">
-                <img src="assets/images/oracle.png" alt="Oracle" class="artwork" data-index="5">
-                <img src="assets/images/plingus.png" alt="Plingus" class="artwork" data-index="6">
-                <img src="assets/images/print-notes.png" alt="Print Notes" class="artwork" data-index="7">
-                <img src="assets/images/sabino-canyon.png" alt="Sabino Canyon" class="artwork" data-index="8">
-                <img src="assets/images/swan-belly.png" alt="Swan Belly" class="artwork" data-index="9">
-                <img src="assets/images/trevor-of-frump.png" alt="Trevor of Frump" class="artwork" data-index="10">
-            </div>
+    <!-- Main Content (hidden behind splash initially) -->
+    <main class="content-wrapper">
+        <div class="content-container">
+        <!-- Content sections will be dynamically loaded here -->
         </div>
+    </main>
 
-        <!-- Text Section -->
-        <div class="text-section">
-            <section>
-                <h2>Reflections</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </section>
-
-            <section>
-                <h2>Gratitude</h2>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</p>
-            </section>
-
-            <section>
-                <h2>Looking Forward</h2>
-                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
-                <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
-            </section>
-
-            <section>
-                <h2>Final Thoughts</h2>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
-                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.</p>
-                <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
-            </section>
-        </div>
-    </div>
-
-    <!-- Audio Player -->
+    <!-- Fixed Audio Player -->
     <div id="audio-player">
         <div class="player-container">
-            <div class="track-info-container">
-                <img src="assets/images/ann-annie-the-wind.jpg" alt="Album art" class="album-art">
-                <div class="text-info">
-                    <span id="trackInfo" class="track-title"></span>
-                    <span class="artist-album">Ann Annie - The Wind</span>
-                </div>
-            </div>
-            
-            <div class="controls-container">
-                <span id="currentTime">0:00</span>
-                <div id="controls">
-                    <button id="btnPrev">«</button>
-                    <button id="btnPlay">Play</button>
-                    <button id="btnPause">Pause</button>
-                    <button id="btnNext">»</button>
-                </div>
-                <span id="duration">0:00</span>
+        <div class="track-info-container">
+            <img src="assets/images/ann-annie-the-wind.jpg" alt="Album art" class="album-art">
+            <div class="text-info">
+            <span id="trackInfo" class="track-title"></span>
+            <span class="artist-album">Ann Annie - The Wind</span>
             </div>
         </div>
+        
+        <div class="controls-container">
+            <span id="currentTime">0:00</span>
+            <div id="controls">
+            <button id="btnPrev">«</button>
+            <button id="btnPlay">Play</button>
+            <button id="btnPause">Pause</button>
+            <button id="btnNext">»</button>
+            </div>
+            <span id="duration">0:00</span>
+        </div>
+        
+        <audio id="myAudio">
+            <!-- Audio source will be set via JavaScript -->
+        </audio>
+        </div>
     </div>
+  </div>
 
-    <script src="assets/js/script.js"></script>
-    <script>
-        // Image transition logic
-        document.addEventListener('DOMContentLoaded', () => {
-            const images = document.querySelectorAll('.artwork');
-            const totalImages = images.length;
-            const textSection = document.querySelector('.text-section');
-            
-            // Show first image on load
-            images[0].classList.add('active');
+  <!-- Font + Background Load Check (inline to run ASAP) -->
+  <script>
+    // 1) Load the Lora font from your local TTF file
+    const fontLoadPromise = new Promise((resolve) => {
+      // Create a FontFace object for Lora
+      const loraFace = new FontFace(
+        'Lora',
+        'url(assets/fonts/Lora/Lora-Regular.ttf) format("truetype")',
+        { weight: '400', style: 'normal' }
+      );
+      // Attempt to load the font
+      loraFace.load().then((loadedFace) => {
+        // Add the loaded font to the document
+        document.fonts.add(loadedFace);
+        resolve();
+      }).catch((err) => {
+        console.error('Error loading Lora font:', err);
+        resolve(); // Even on error, resolve to avoid hanging
+      });
+    });
 
-            textSection.addEventListener('scroll', () => {
-                // Calculate scroll progress based on text section
-                const scrollHeight = textSection.scrollHeight - textSection.clientHeight;
-                const scrollProgress = (textSection.scrollTop / scrollHeight) * 0.3;
-                
-                // Calculate which image should be shown
-                const imageIndex = Math.min(
-                    Math.floor(scrollProgress * totalImages), 
-                    totalImages - 1
-                );
-                
-                images.forEach((img, index) => {
-                    img.classList.toggle('active', index === imageIndex);
-                });
-            });
-        });
-    </script>
+    // 2) Preload the splash background image
+    const bgLoadPromise = new Promise((resolve) => {
+      const splashBg = new Image();
+      splashBg.src = 'assets/images/site-background-3.png';
+      splashBg.onload = () => resolve();
+      splashBg.onerror = () => resolve(); // Resolve even if failed, to avoid stuck
+    });
+
+    // 3) Once both font & background are ready, show the page
+    Promise.all([fontLoadPromise, bgLoadPromise])
+      .then(() => {
+        document.body.classList.add('page-ready');
+      });
+  </script>
+
+  <!-- Your main script (after the DOM is ready) -->
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
